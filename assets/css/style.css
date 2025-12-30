@@ -130,3 +130,40 @@ footer {
     border-top: 1px solid #1e293b;
     font-size: 13px;
 }
+
+/* ===== DOWNLOAD PAGE ===== */
+
+.page-title {
+    font-size: 26px;
+    margin-bottom: 10px;
+    color: #facc15;
+}
+
+.page-desc {
+    color: #94a3b8;
+    margin-bottom: 40px;
+    max-width: 700px;
+}
+
+.btn {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 12px 22px;
+    border-radius: 8px;
+    border: 1px solid #38bdf8;
+    color: #38bdf8;
+    text-decoration: none;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: #38bdf8;
+    color: #020617;
+}
+
+nav a.active {
+    color: #facc15;
+    font-weight: 600;
+}
+
