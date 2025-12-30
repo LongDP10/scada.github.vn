@@ -2,61 +2,81 @@
 <html lang="vi">
 <head>
     <meta charset="UTF-8">
-    <title>SCADA OCC</title>
-    <link rel="stylesheet" href="css/style.css">
+    <title>SCADA OCC – Control Center</title>
+    <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
 
 <header class="topbar">
     <div class="logo">⚡ SCADA OCC</div>
     <nav>
-        <a href="#">Home</a>
-        <a href="#download">Download</a>
-        <a href="#">VI</a>
-        <a href="#">EN</a>
+        <a href="index.html" class="active">Home</a>
+        <a href="download.html">Download</a>
     </nav>
 </header>
 
 <section class="hero">
-    <div class="hero-image">
-        <img src="images/occ.jpg" alt="SCADA OCC">
-    </div>
-    <div class="hero-text">
+    <div class="hero-left">
         <h1>Kỹ sư SCADA – Hệ thống điện</h1>
-        <p>Giám sát – Điều khiển – Tự động hóa lưới điện</p>
-        <span>Operation Control Center (OCC)</span>
+        <p class="subtitle">
+            Giám sát – Điều khiển – Tự động hóa lưới điện<br>
+            Trung tâm điều khiển xa (OCC)
+        </p>
+
+        <ul class="list">
+            <li>IEC 60870-5-104 / IEC 101</li>
+            <li>RTU – REC – LBS – Recloser</li>
+            <li>SCADA OCC / SP5 / WinCC</li>
+            <li>OT Cyber Security</li>
+        </ul>
+    </div>
+
+    <div class="hero-right">
+        <img src="images/occ.jpg" alt="OCC SCADA">
     </div>
 </section>
 
 <section class="section">
-    <h2>🎯 Phạm vi vận hành</h2>
+    <h2>📡 Phạm vi vận hành</h2>
+
     <div class="grid-3">
-        <div class="card">🏭 Nhà máy thủy điện</div>
-        <div class="card">⚡ Trạm 110kV / 35kV / 22kV</div>
-        <div class="card">🌐 Lưới điện phân phối</div>
+        <div class="card">
+            <h3>🏭 Nhà máy điện</h3>
+            <p>Thủy điện – Nhiệt điện – NLTT</p>
+        </div>
+
+        <div class="card">
+            <h3>⚡ Trạm điện</h3>
+            <p>110kV / 35kV / 22kV</p>
+        </div>
+
+        <div class="card">
+            <h3>🌐 Lưới phân phối</h3>
+            <p>Điều khiển – Tự động – Giám sát</p>
+        </div>
     </div>
 </section>
 
-<section class="section">
-    <h2>🧠 Năng lực kỹ thuật</h2>
+<section class="section dark">
     <div class="grid-2">
-        <div class="card">IEC 60870-5-104 / IEC 101</div>
-        <div class="card">RTU – REC – LBS – Recloser</div>
-        <div class="card">SCADA OCC / SP5 / WinCC</div>
-        <div class="card">OT Cyber Security</div>
-    </div>
-</section>
+        <div>
+            <h2>🖥 Hệ thống đang vận hành</h2>
+            <ul class="list">
+                <li>OCC – Trung tâm điều khiển</li>
+                <li>Trạm không người trực</li>
+                <li>REC / LBS điều khiển xa</li>
+                <li>Thu thập dữ liệu thời gian thực</li>
+            </ul>
+        </div>
 
-<section class="section" id="download">
-    <h2>⬇️ Tải phần mềm & tài liệu</h2>
-    <div class="downloads">
-        <a href="files/iec104-simulator.zip" download>IEC104 Simulator</a>
-        <a href="files/scada-guide.pdf" download>Tài liệu SCADA</a>
+        <div>
+            <img src="images/substation.jpg" alt="Substation">
+        </div>
     </div>
 </section>
 
 <footer>
-    © 2025 Long Do – SCADA Engineer
+    © 2025 Đỗ Long – SCADA Engineer
 </footer>
 
 </body>
