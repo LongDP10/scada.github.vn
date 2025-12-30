@@ -1,149 +1,56 @@
 <!DOCTYPE html>
 <html lang="vi">
 <head>
-<meta charset="UTF-8">
-<title>SCADA Engineer | Long Đỗ</title>
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<style>
-body {
-    margin: 0;
-    font-family: "Segoe UI", Arial, sans-serif;
-    background: #f4f6f8;
-    color: #333;
-}
-
-header {
-    background: #0a3d62;
-    color: white;
-    padding: 25px;
-    text-align: center;
-}
-
-header h1 {
-    margin: 0;
-    font-size: 28px;
-}
-
-header p {
-    margin-top: 5px;
-    font-size: 15px;
-    opacity: 0.9;
-}
-
-nav {
-    background: #1e3799;
-    padding: 10px;
-    text-align: center;
-}
-
-nav a {
-    color: white;
-    margin: 0 15px;
-    text-decoration: none;
-    font-weight: 500;
-}
-
-nav a:hover {
-    text-decoration: underline;
-}
-
-.container {
-    max-width: 1000px;
-    margin: auto;
-    padding: 20px;
-}
-
-.card {
-    background: white;
-    padding: 20px;
-    margin-bottom: 20px;
-    border-left: 5px solid #1e3799;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-}
-
-.card h2 {
-    margin-top: 0;
-    color: #1e3799;
-}
-
-ul {
-    padding-left: 20px;
-}
-
-footer {
-    background: #0a3d62;
-    color: white;
-    text-align: center;
-    padding: 15px;
-    font-size: 14px;
-}
-</style>
+    <meta charset="UTF-8">
+    <title>SCADA OCC Engineer</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <script src="assets/js/lang.js" defer></script>
 </head>
-
 <body>
 
 <header>
-    <h1>SCADA ENGINEER</h1>
-    <p>Giám sát – Điều khiển – Tự động hóa hệ thống điện</p>
+    <h1>⚡ SCADA OCC</h1>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="download.html">Download</a>
+        <button onclick="setLang('vi')">VI</button>
+        <button onclick="setLang('en')">EN</button>
+    </nav>
 </header>
 
-<nav>
-    <a href="#about">Giới thiệu</a>
-    <a href="#scada">SCADA</a>
-    <a href="#software">Phần mềm</a>
-    <a href="#docs">Tài liệu</a>
-    <a href="#contact">Liên hệ</a>
-</nav>
-
-<div class="container">
-
-    <div class="card" id="about">
-        <h2>👷 Giới thiệu</h2>
-        <p>
-            Kỹ sư SCADA – Hệ thống điện.  
-            Kinh nghiệm làm việc với OCC, RTU, IEC 60870-5-104, HMI, hệ thống giám sát trạm điện.
-        </p>
+<section class="hero">
+    <img src="assets/img/scada.jpg" alt="SCADA OCC">
+    <div>
+        <h2 data-vi="Kỹ sư SCADA – Hệ thống điện"
+            data-en="SCADA Engineer – Power Systems"></h2>
+        <p data-vi="Giám sát – Điều khiển – Tự động hóa lưới điện"
+           data-en="Monitoring – Control – Power Automation"></p>
     </div>
+</section>
 
-    <div class="card" id="scada">
-        <h2>⚡ SCADA & Giao thức</h2>
-        <ul>
-            <li>IEC 60870-5-104 / IEC-101</li>
-            <li>SCADA OCC – Trạm điện / Nhà máy thủy điện</li>
-            <li>RTU – LBS – REC – HMI</li>
-            <li>An toàn hệ thống OT</li>
-        </ul>
+<section class="content">
+    <h3 data-vi="Chuyên môn"
+        data-en="Expertise"></h3>
+    <ul>
+        <li>IEC 60870-5-104 / IEC 101</li>
+        <li>RTU – REC – LBS – Recloser</li>
+        <li>SCADA OCC / SP5 / WinCC</li>
+        <li>OT Cyber Security</li>
+    </ul>
+</section>
+
+<section class="hero">
+    <img src="assets/img/substation.jpg" alt="Substation">
+    <div>
+        <h3 data-vi="Hệ thống đang vận hành"
+            data-en="Operational Systems"></h3>
+        <p data-vi="Nhà máy thủy điện – Trạm điện – Lưới phân phối"
+           data-en="Hydropower Plants – Substations – Distribution Grid"></p>
     </div>
-
-    <div class="card" id="software">
-        <h2>💻 Phần mềm</h2>
-        <ul>
-            <li><a href="software/rec_lbs.zip">Phần mềm mô phỏng REC/LBS</a></li>
-            <li><a href="software/iec104_tool.zip">Công cụ IEC-104 (Python)</a></li>
-            <li><a href="software/quiz.apk">Ứng dụng trắc nghiệm Android</a></li>
-        </ul>
-    </div>
-
-    <div class="card" id="docs">
-        <h2>📄 Tài liệu</h2>
-        <ul>
-            <li><a href="docs/IEC104.pdf">IEC 60870-5-104</a></li>
-            <li><a href="docs/SCADA_OCC.pdf">Hướng dẫn SCADA OCC</a></li>
-            <li><a href="docs/OT_Security.pdf">An toàn hệ thống OT</a></li>
-        </ul>
-    </div>
-
-    <div class="card" id="contact">
-        <h2>📞 Liên hệ</h2>
-        <p>Email: yourmail@gmail.com</p>
-        <p>Website: https://scada.github.vn</p>
-    </div>
-
-</div>
+</section>
 
 <footer>
-    © 2025 | SCADA Engineer – Long Đỗ
+    © 2025 Long Do – SCADA Engineer
 </footer>
 
 </body>
